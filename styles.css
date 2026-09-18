@@ -14,34 +14,6 @@
   --brand-solid-hover: #00b869;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --trilon-green: #17c47b;
-    --trilon-green-dark: #5fd9a4;
-    --trilon-text: #eaf3ee;
-    --trilon-gray: #9fb0a8;
-    --bg: #0e1613;
-    --bg-alt: #131c18;
-    --border: #26332d;
-    --card-bg: #16201b;
-    --code-bg: #101815;
-    --code-text: #d9e8e0;
-  }
-}
-
-:root[data-theme="dark"] {
-  --trilon-green: #17c47b;
-  --trilon-green-dark: #5fd9a4;
-  --trilon-text: #eaf3ee;
-  --trilon-gray: #9fb0a8;
-  --bg: #0e1613;
-  --bg-alt: #131c18;
-  --border: #26332d;
-  --card-bg: #16201b;
-  --code-bg: #101815;
-  --code-text: #d9e8e0;
-}
-
 * {
   box-sizing: border-box;
 }
