@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to add a company wide signature for Trilon e-mails</title>
+<meta name="description" content="Follow this steps, project created for Trilon IT.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="https://www.trilon.com" target="_blank" rel="noopener" class="logo-link">
+      <img src="https://static.wixstatic.com/shapes/ffdde1_206acf99eb1a48c5b6a59c7d2ffb0e7a.svg" alt="Trilon" class="logo">
+    </a>
+    <span class="header-tag">IT Resources</span>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container">
+      <p class="eyebrow">Trilon IT · Email Guide</p>
+      <h1>How to add a company wide signature for Trilon e-mails</h1>
+      <p class="lead">Follow this steps, project created for Trilon IT.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2><span class="step-num">1</span> Watch the walkthrough</h2>
+      <p class="section-intro">This short video walks you through installing your signature step by step.</p>
+      <div class="video-wrap">
+        <iframe
+          src="https://www.youtube.com/embed/kEYilgvEMl0"
+          title="How to add a company wide signature for Trilon e-mails"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <h2><span class="step-num">2</span> Signature HTML to copy</h2>
+      <p class="section-intro">Copy the code below and paste it into your email client's signature editor (as HTML), then replace the <code>%%Placeholders%%</code> with your own information.</p>
+
+      <div class="code-card">
+        <div class="code-card-header">
+          <span>signature.html</span>
+          <button id="copyBtn" class="copy-btn" type="button">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            <span class="copy-btn-label">Copy code</span>
+          </button>
+        </div>
+        <textarea id="signatureCode" class="code-textarea" readonly spellcheck="false"><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"><HTML><HEAD><TITLE>Email Signature</TITLE><META content="text/html; charset=utf-8" http-equiv="Content-Type"></HEAD><BODY style="font-size: 10pt; font-family: Verdana, sans-serif;"><table width="300" style="width: 50px; font-family: Verdana, sans-serif; background: transparent !important;" cellpadding="0" cellspacing="0" border="0"><tbody>
+
+<tr><td valign="top" style="border-top: 2px solid #00a05a; padding-top: 16px; font-family: Verdana, sans-serif;"><strong><span style="font-size: 12pt; font-family: Verdana, sans-serif; color: #145636; line-height: 18pt;">%%FirstName%%<br>%%LastName%%</span></strong><span style="font-size: 9pt; font-family: Verdana, sans-serif; color: #717171; line-height: 14pt;"><br>%%Title%%</span></td></tr>
+
+<tr><td valign="top" style="padding-top: 18px;"><a href="https://www.trilon.com" target="_blank"><img border="0" width="190" style="width: 190px; height: auto; border: 0; display: block;" src="https://static.wixstatic.com/shapes/ffdde1_206acf99eb1a48c5b6a59c7d2ffb0e7a.svg" alt="Trilon"></a></td></tr>
+
+<tr><td valign="top" style="padding-top: 4px; font-family: Verdana, sans-serif; font-size: 6.5pt; line-height: 10pt; color: #717171; white-space: nowrap;">Smarter Solution. Better Communities.</td></tr>
+
+<tr><td valign="top" style="padding-top: 18px; padding-bottom: 20px;">
+<table cellpadding="0" cellspacing="0" border="0" style="font-family: Verdana, sans-serif;"><tbody>
+<tr><td valign="top" style="width: 20px; font-size: 9pt; font-family: Verdana, sans-serif; color: #0a2a1a; line-height: 14pt;"><strong>E:</strong></td><td valign="top" style="font-size: 9pt; font-family: Verdana, sans-serif; color: #0a2a1a; line-height: 14pt;"><a href="mailto:%%Email%%" style="text-decoration: none; color: #0a2a1a;">%%Email%%</a></td></tr>
+<tr><td valign="top" style="font-size: 9pt; font-family: Verdana, sans-serif; color: #0a2a1a; line-height: 14pt;"><strong>P:</strong></td><td valign="top" style="font-size: 9pt; font-family: Verdana, sans-serif; color: #0a2a1a; line-height: 14pt;">%%PhoneNumber%%</td></tr>
+<tr><td valign="top" style="font-size: 9pt; font-family: Verdana, sans-serif; color: #0a2a1a; line-height: 14pt;"><strong>A:</strong></td><td valign="top" style="font-size: 9pt; font-family: Verdana, sans-serif; color: #0a2a1a; line-height: 14pt;">1200 17th Street, Suite 860,<br>Denver, CO 80202</td></tr>
+</tbody></table>
+</td></tr>
+
+</tbody></table></BODY></HTML></textarea>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2><span class="step-num">3</span> Preview</h2>
+      <p class="section-intro">This is roughly how the signature will look once your details are filled in.</p>
+      <div class="preview-card">
+        <table width="300" style="width: 300px; font-family: Verdana, sans-serif; background: transparent;" cellpadding="0" cellspacing="0" border="0">
+          <tbody>
+            <tr><td valign="top" style="border-top: 2px solid #00a05a; padding-top: 16px; font-family: Verdana, sans-serif;"><strong><span style="font-size: 12pt; font-family: Verdana, sans-serif; color: #145636; line-height: 18pt;">Jane<br>Doe</span></strong><span style="font-size: 9pt; font-family: Verdana, sans-serif; color: #717171; line-height: 14pt;"><br>Project Engineer</span></td></tr>
+            <tr><td valign="top" style="padding-top: 18px;"><a href="https://www.trilon.com" target="_blank"><img border="0" width="190" style="width: 190px; height: auto; border: 0; display: block;" src="https://static.wixstatic.com/shapes/ffdde1_206acf99eb1a48c5b6a59c7d2ffb0e7a.svg" alt="Trilon"></a></td></tr>
+            <tr><td valign="top" style="padding-top: 4px; font-family: Verdana, sans-serif; font-size: 6.5pt; line-height: 10pt; color: #717171; white-space: nowrap;">Smarter Solution. Better Communities.</td></tr>
+            <tr><td valign="top" style="padding-top: 18px; padding-bottom: 4px;">
+              <table cellpadding="0" cellspacing="0" border="0" style="font-family: Verdana, sans-serif;"><tbody>
+                <tr><td valign="top" style="width: 20px; font-size: 9pt; font-family: Verdana, sans-serif; color: #0a2a1a; line-height: 14pt;"><strong>E:</strong></td><td valign="top" style="font-size: 9pt; font-family: Verdana, sans-serif; color: #0a2a1a; line-height: 14pt;"><a href="mailto:jane.doe@trilon.com" style="text-decoration: none; color: #0a2a1a;">jane.doe@trilon.com</a></td></tr>
+                <tr><td valign="top" style="font-size: 9pt; font-family: Verdana, sans-serif; color: #0a2a1a; line-height: 14pt;"><strong>P:</strong></td><td valign="top" style="font-size: 9pt; font-family: Verdana, sans-serif; color: #0a2a1a; line-height: 14pt;">(303) 555-0123</td></tr>
+                <tr><td valign="top" style="font-size: 9pt; font-family: Verdana, sans-serif; color: #0a2a1a; line-height: 14pt;"><strong>A:</strong></td><td valign="top" style="font-size: 9pt; font-family: Verdana, sans-serif; color: #0a2a1a; line-height: 14pt;">1200 17th Street, Suite 860,<br>Denver, CO 80202</td></tr>
+              </tbody></table>
+            </td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>Questions about this guide? Contact <strong>Dania Morales-Perea</strong> &mdash; <a href="mailto:dania.moralea-perea@horrocks.com">dania.moralea-perea@horrocks.com</a></p>
+    <p class="footer-note">Project created for Trilon IT.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
