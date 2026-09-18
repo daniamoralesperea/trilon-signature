@@ -6,6 +6,40 @@
   --bg: #ffffff;
   --bg-alt: #f5f8f6;
   --border: #e3e8e5;
+  --card-bg: #ffffff;
+  --code-bg: #fbfcfb;
+  --code-text: #1f2d26;
+  --brand-solid: #00a05a;
+  --brand-solid-dark: #145636;
+  --brand-solid-hover: #00b869;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --trilon-green: #17c47b;
+    --trilon-green-dark: #5fd9a4;
+    --trilon-text: #eaf3ee;
+    --trilon-gray: #9fb0a8;
+    --bg: #0e1613;
+    --bg-alt: #131c18;
+    --border: #26332d;
+    --card-bg: #16201b;
+    --code-bg: #101815;
+    --code-text: #d9e8e0;
+  }
+}
+
+:root[data-theme="dark"] {
+  --trilon-green: #17c47b;
+  --trilon-green-dark: #5fd9a4;
+  --trilon-text: #eaf3ee;
+  --trilon-gray: #9fb0a8;
+  --bg: #0e1613;
+  --bg-alt: #131c18;
+  --border: #26332d;
+  --card-bg: #16201b;
+  --code-bg: #101815;
+  --code-text: #d9e8e0;
 }
 
 * {
@@ -33,7 +67,7 @@ body {
 /* Header */
 .site-header {
   border-bottom: 1px solid var(--border);
-  background: #fff;
+  background: var(--card-bg);
 }
 
 .header-inner {
@@ -60,7 +94,7 @@ body {
 
 /* Hero */
 .hero {
-  background: linear-gradient(180deg, var(--bg-alt) 0%, #ffffff 100%);
+  background: linear-gradient(180deg, var(--bg-alt) 0%, var(--bg) 100%);
   padding: 56px 0 40px;
   border-bottom: 1px solid var(--border);
 }
@@ -114,7 +148,7 @@ body {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background: var(--trilon-green);
+  background: var(--brand-solid);
   color: #fff;
   font-size: 15px;
   font-weight: 700;
@@ -151,7 +185,7 @@ body {
   border: 1px solid var(--border);
   border-radius: 12px;
   overflow: hidden;
-  background: #fff;
+  background: var(--card-bg);
   box-shadow: 0 8px 24px rgba(10, 42, 26, 0.06);
 }
 
@@ -160,7 +194,7 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 12px 16px;
-  background: var(--trilon-green-dark);
+  background: var(--brand-solid-dark);
   color: #fff;
   font-size: 13px;
   font-weight: 600;
@@ -170,7 +204,7 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  background: var(--trilon-green);
+  background: var(--brand-solid);
   color: #fff;
   border: none;
   padding: 7px 14px;
@@ -183,7 +217,7 @@ body {
 }
 
 .copy-btn:hover {
-  background: #00b869;
+  background: var(--brand-solid-hover);
 }
 
 .copy-btn:active {
@@ -191,7 +225,7 @@ body {
 }
 
 .copy-btn.copied {
-  background: var(--trilon-green-dark);
+  background: var(--brand-solid-dark);
 }
 
 .code-textarea {
@@ -202,14 +236,14 @@ body {
   font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
   font-size: 12.5px;
   line-height: 1.6;
-  color: #1f2d26;
-  background: #fbfcfb;
+  color: var(--code-text);
+  background: var(--code-bg);
   resize: vertical;
   display: block;
 }
 
 .code-textarea:focus {
-  outline: 2px solid var(--trilon-green);
+  outline: 2px solid var(--brand-solid);
   outline-offset: -2px;
 }
 
@@ -219,7 +253,7 @@ body {
   padding: 24px 28px;
   border: 1px solid var(--border);
   border-radius: 12px;
-  background: #fff;
+  background: var(--card-bg);
   box-shadow: 0 8px 24px rgba(10, 42, 26, 0.06);
   max-width: 100%;
   overflow-x: auto;
